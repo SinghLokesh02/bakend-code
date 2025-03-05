@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../stylesheets/index.css">
+</head>
+<body>
+    <h1>Welcome <span> </span></h1>
+    <ul class="list">
+        <!-- <% for (let i = 0; i < user.length; i++) { %>
+            <li><%= user[i] %></li>
+        <% } %> -->
+
+        <% user.map(data => { %>
+            <li class="name"><%= data %></li>
+        <% }) %>
+
+    </ul>
+</body>
+</html>
